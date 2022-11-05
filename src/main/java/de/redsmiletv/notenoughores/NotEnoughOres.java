@@ -1,6 +1,8 @@
 package de.redsmiletv.notenoughores;
 
 import com.mojang.logging.LogUtils;
+import de.redsmiletv.notenoughores.block.ModBlocks;
+import de.redsmiletv.notenoughores.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -42,6 +44,9 @@ public class NotEnoughOres {
 
     public NotEnoughOres() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
