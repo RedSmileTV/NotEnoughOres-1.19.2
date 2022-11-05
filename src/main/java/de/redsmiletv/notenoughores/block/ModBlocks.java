@@ -7,6 +7,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -22,13 +23,24 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, NotEnoughOres.MOD_ID);
 
 
+
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f)), ModCreativeModeTab.NOE_TAB);
-
 
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f)), ModCreativeModeTab.NOE_TAB);
 
+    public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlock("topaz_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f)), ModCreativeModeTab.NOE_TAB);
+
+    public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f)), ModCreativeModeTab.NOE_TAB);
+
+    public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f)), ModCreativeModeTab.NOE_TAB);
+
+    public static final RegistryObject<Block> TOPAZ_ORE = registerBlock("topaz_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f)), ModCreativeModeTab.NOE_TAB);
 
 
 
