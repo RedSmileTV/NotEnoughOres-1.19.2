@@ -3,6 +3,7 @@ package de.redsmiletv.notenoughores.block;
 import de.redsmiletv.notenoughores.NotEnoughOres;
 import de.redsmiletv.notenoughores.item.ModCreativeModeTab;
 import de.redsmiletv.notenoughores.item.ModItems;
+import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -21,11 +22,12 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, NotEnoughOres.MOD_ID);
 
 
-    public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)));
+    public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f)), ModCreativeModeTab.NOE_TAB);
 
-    public static final RegistryObject<Block> SAPPHIRE_BLOCK = BLOCKS.register("sapphire_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)));
+
+    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f)), ModCreativeModeTab.NOE_TAB);
 
 
 
