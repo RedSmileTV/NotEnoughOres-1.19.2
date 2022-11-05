@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "notenoughores:ruby"
+    }
+  },
+  "result": {
+    "item": "notenoughores:ruby_block",
+    "count": 1
+  }
+}
