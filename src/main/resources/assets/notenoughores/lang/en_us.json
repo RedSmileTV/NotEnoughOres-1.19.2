@@ -1,0 +1,17 @@
+{
+  "_comment": "Items",
+
+  "item.notenoughores.ruby": "Ruby",
+  "item.notenoughores.sapphire": "Sapphire",
+  "item.notenoughores.topaz": "Topaz",
+  "item.notenoughores.raw_diamond": "Raw Diamond",
+
+  "_comment": "Blocks",
+
+  "block.notenoughores.ruby_block": "Ruby Block",
+  "block.notenoughores.sapphire_block": "Sapphire Block",
+
+  "_comment": "Creative Mode Tabs",
+
+  "itemGroup.notenoughores.noe_tab": "NotEnoughOres"
+}
