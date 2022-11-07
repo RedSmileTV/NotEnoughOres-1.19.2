@@ -27,6 +27,15 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_EMERALD = ITEMS.register("raw_emerald",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOE_TAB)));
 
+    public static final RegistryObject<Item> RAW_RUBY = ITEMS.register("raw_ruby",
+    () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOE_TAB)));
+
+    public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register("raw_sapphire",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOE_TAB)));
+
+    public static final RegistryObject<Item> RAW_TOPAZ = ITEMS.register("raw_topaz",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOE_TAB)));
+
 
 
     public static void register(IEventBus eventBus) {

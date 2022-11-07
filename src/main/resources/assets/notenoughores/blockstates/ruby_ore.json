@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "notenoughores:block/ruby_block"
+      "model": "notenoughores:block/ruby_ore"
     }
   }
 }
